@@ -44,15 +44,19 @@ body {
 #registration_form .col-sm-12 .form-group #email {
     height: 50px;
     border: 1.5px solid #666666;
-    border-radius: none;
-    /* margin-bottom: 1rem; */
+    border-radius: none;    
 }
-
+#registration_form .col-sm-12 .form-group #email:focus{
+    box-shadow: none;
+}
 #registration_form .col-sm-12 .form-group #password {
     height: 50px;
-    /* margin-top: 10px; */
     border: 1.5px solid #666666;
     border-radius: none;
+}
+
+#registration_form .col-sm-12 .form-group #password:focus{
+    box-shadow: none;
 }
 
 #registration_form .col-sm-12 .link {
@@ -74,7 +78,11 @@ body {
     height: 55px;
     border-radius:30px;
     font-size: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    outline: none;
+    border: none;
+}
+#registration_form .col-sm-12 #register:hover{
+    background-color: #004182;
 }
 
 .google {
@@ -98,7 +106,7 @@ body {
 }
 
 .last {
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
     font-size: 16px;
     font-weight: 100;
