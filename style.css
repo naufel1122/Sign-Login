@@ -38,12 +38,12 @@ body {
 
 #registration_form .col-sm-12 .form-group {
     /* margin */
-    padding: 5px 10px;
+    padding: 5px 5px;
 }
 
 #registration_form .col-sm-12 .form-group #email {
     height: 50px;
-    border: 1.5px solid grey;
+    border: 1.5px solid #666666;
     border-radius: none;
     /* margin-bottom: 1rem; */
 }
@@ -51,7 +51,7 @@ body {
 #registration_form .col-sm-12 .form-group #password {
     height: 50px;
     /* margin-top: 10px; */
-    border: 1.5px solid grey;
+    border: 1.5px solid #666666;
     border-radius: none;
 }
 
@@ -59,6 +59,8 @@ body {
     margin-top: 60px;
     font-weight: 300;
     font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 #registration_form .col-sm-12 .link a {
@@ -70,7 +72,7 @@ body {
     width: 100%;
     background-color: #0a66c2;
     height: 55px;
-    border-radius: 25px;
+    border-radius:30px;
     font-size: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
