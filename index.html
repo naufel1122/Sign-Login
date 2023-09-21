@@ -23,28 +23,26 @@
         <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-sm-12 md-8 lg-4">
+                    <h1>Join Blogging App</h1>
                     <div class="form-group">
-                        <label for="name">Enter Your Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
+                        <!-- <label for="email">Email Address</label> -->
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="name">Enter Your Last Name</label>
-                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Enter Your Last Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
+                        <!-- <label for="password">Password</label> -->
                         <input type="password" name="password" id="password" class="form-control"
-                            placeholder="Enter your password">
+                            placeholder="Password (8+ characters)">
+                    </div><br>
+                    <span class="link">By clicking Agree & Join, you agree to the LinkedIn <a href="#">User Agreement,
+                        </a><a href="#">Privacy Policy, </a><a href="#">Cookies Policy</a></span>
+                    <br><br>
+                    <button type="button" id="register" name="register" class="btn btn-success">Agree & Join</button><br>
+                    <hr>
+                    <button class="google" type="button" id="loginwithgoogle"><img class="googleimg" height="25rem"
+                            width="25rem" src="./google.png">Continue With Google</button>
+                    <div class="last">
+                        <p>Already Have an Account <a href="./login.html">Log In</a></p>
                     </div>
-                    <span>Already Have an Account <a href="./login.html">Login</a></span><br><br>
-                    <button type="button" id="register" name="register" class="btn btn-success">Register
-                        Now</button><br>
-                    <button class="google" type="button" id="loginwithgoogle"><img class="googleimg" height="32rem"
-                            width="30rem" src="./google.png">Continue With Google</button>
                 </div><!-- end col -->
         </form>
     </div>

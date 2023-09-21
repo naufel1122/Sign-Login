@@ -1,80 +1,77 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body {
     background-color: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
 }
-.top{
-    height: 40px;
-    min-width: 100%;
-    background-color: #7749f8;
-    display: flex;
-    justify-content: space-around;
-}
-.top p{
-    /* padding: 20px; */
-    font-size: 25px;
-    color:#fff;
-}
-.top a{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 8px;
-}
-.second {
-    height:112px;
-    min-width: 100%;
-    background-color: #ffffff;
-    padding: 30px;
-}
-.second p{
-    font-size: 32px;
-    font-weight: 900;
-    /* padding: 30px; */
-    margin-left: 70px;
-}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    width: 900px;
+    /* width: 450px; */
 }
 
 #registration_form {
     height: 550px;
-    width: 500px;
+    width: 400px;
     background-color: #ffffff;
     /* padding: 10px 40px; */
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px;
+    border-radius: 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #registration_form .col-sm-12 h1 {
-    text-align: center;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    color: rgb(154, 108, 154);
-    padding: 20px;
+    font-weight: 400;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 28px;
 }
 
-#registration_form .col-sm-12 .form-group label {
-    font-size: 18px;
-    color: #363636;
-    padding-left: 5px;
+#registration_form .col-sm-12 .form-group {
+    /* margin */
+    padding: 5px 10px;
+}
+
+#registration_form .col-sm-12 .form-group #email {
+    height: 50px;
+    border: 1.5px solid grey;
+    border-radius: none;
+    /* margin-bottom: 1rem; */
+}
+
+#registration_form .col-sm-12 .form-group #password {
+    height: 50px;
+    /* margin-top: 10px; */
+    border: 1.5px solid grey;
+    border-radius: none;
+}
+
+#registration_form .col-sm-12 .link {
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#registration_form .col-sm-12 .link a {
+    font-weight: bold;
+    color: #0a66c2;
 }
 
 #registration_form .col-sm-12 #register {
     width: 100%;
     background-color: #0a66c2;
-    height: 45px;
+    height: 55px;
     border-radius: 25px;
-    /* background-image: linear-gradient(45deg, purple, rgb(206, 11, 206)); */
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -88,8 +85,19 @@ body{
     background-color: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 25px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.googleimg{
+
+.google:hover{
+    background-color: #f7faff;
+}
+
+.googleimg {
     margin-right: 10px;
+}
+
+.last {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
 }
