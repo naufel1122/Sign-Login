@@ -8,103 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body{
-        background-color: #f8f9fa;
-    }
-    .top{
-        height: 40px;
-        min-width: 100%;
-        background-color: #7749f8;
-        display: flex;
-        justify-content: space-around;
-    }
-    .top p{
-        /* padding: 20px; */
-        font-size: 25px;
-        color:#fff;
-    }
-    .top a{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: 8px;
-    }
-    .second {
-        height:112px;
-        min-width: 100%;
-        background-color: #ffffff;
-        padding: 30px;
-    }
-    .second p{
-        font-size: 32px;
-        font-weight: 900;
-        /* padding: 30px; */
-        margin-left: 70px;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
-        width: 900px;
-    }
-
-    #registration_form {
-        height: 550px;
-        width: 500px;
-        background-color: #ffffff;
-        /* padding: 10px 40px; */
-        padding: 50px;
-        border-radius: 20px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-
-    #registration_form .col-sm-12 h1 {
-        text-align: center;
-        font-weight: 900;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        color: rgb(154, 108, 154);
-        padding: 20px;
-    }
-
-    #registration_form .col-sm-12 .form-group label {
-        font-size: 18px;
-        color: #363636;
-        padding-left: 5px;
-    }
-
-    #registration_form .col-sm-12 #register {
-        width: 100%;
-        background-color: #7749f8;
-        /* background-image: linear-gradient(45deg, purple, rgb(206, 11, 206)); */
-        font-size: 18px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .google {
-        height: 40px;
-        width: 100%;
-        border-radius: 3px;
-        margin-top: 8px;
-        color: #fff;
-        padding: 5px;
-        background-color: #fff;
-        border: none;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-</style>
 
 <body>
-    <div class="top">
+    <!-- <div class="top">
         <p>Personal Blogging App</p>
         <a href="./login.html">Login </a>
     </div>
     <div class="second">
         <p>SignUp</p>
-    </div>
+    </div> -->
     <div class="container">
         <form name="registration_form" id="registration_form" method="post" action="#" enctype="multipart/form-data">
             <div class="row">
@@ -130,10 +44,12 @@
                     <button type="button" id="register" name="register" class="btn btn-success">Register
                         Now</button><br>
                     <button class="google" type="button" id="loginwithgoogle"><img class="googleimg" height="32rem"
-                            width="100rem" src="./google full.png"></button>
+                            width="30rem" src="./google.png">Continue With Google</button>
                 </div><!-- end col -->
         </form>
     </div>
+
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
@@ -171,7 +87,7 @@
                     // The signed-in user info.
                     const user = result.user;
                     alert("google login successful")
-                    window.location.href = "./public/index.html"
+                    window.location.href = "./google.html"
                     // IdP data available using getAdditionalUserInfo(result)
                     // ...
                 }).catch((error) => {
@@ -183,7 +99,7 @@
                     // The AuthCredential type that was used.
                     const credential = GoogleAuthProvider.credentialFromError(error);
                     alert("google login error")
-                    // window.location.href = "./public/index.html"
+                    window.location.href = "./google.html"
                     // ...
                 });
 
