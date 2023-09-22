@@ -20,8 +20,8 @@ body {
 }
 
 #registration_form {
-    height: 550px;
-    width: 400px;
+    max-height: 566px;
+    max-width: 400px;
     background-color: #ffffff;
     /* padding: 10px 40px; */
     padding: 25px;
