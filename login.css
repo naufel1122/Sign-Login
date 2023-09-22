@@ -15,8 +15,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 500px;
+    height: 80vh;
+    /* height: 100vh; */
+    /* width: 500px; */
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    #login_form {
+        height: 550px;
+        width: 450px;
+        background-color: #ffffff;
+        /* padding: 10px 40px; */
+        /* padding: 25px; */
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    }
+    #login_form .col-sm-12 .form-group input{
+        height: 50px;
+        border: 1.5px solid #666666;
+        width: 100%;
+    }
+    
 }
 
 #login_form {
@@ -24,7 +46,7 @@ body{
     width: 450px;
     background-color: #ffffff;
     /* padding: 10px 40px; */
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
@@ -36,9 +58,9 @@ body{
 }
 
 #login_form .col-sm-12 .form-group label {
-    font-size: 18px;
+    font-size: 1.5rem;
     color: #363636;
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 #login_form .col-sm-12 .form-group input{
     height: 50px;
@@ -71,7 +93,7 @@ body{
 .google {
     font-size: 13px;
     height: 45px;
-    width:50%;
+    min-width:50%;
     border-radius: 3px;
     margin-top: 8px;
     /* padding: 5px; */
